@@ -1,0 +1,28 @@
+Here is how to program!
+
+1. Make a folder for your code
+2. Decide what language to work in (I suggest Python)
+3. Start!!! Lol
+
+To run:
+1. Open a terminal by going to `Terminal->New Terminal` above.
+2. Run your program like: `python3 main.py` (assuming you named your program main.py)
+
+To upload to github
+** If it's already in github
+    1. Run `git status`. You'll see the files you changed in red
+    2. Make sure you are on a "branch" you can write to. Only write to your branches.
+        If it says you are on branch `main`, make a new one.
+        2a. Do `git checkout -b <branch_name>`. That's it! Usually make it related to the change you are making (like `git checkout -b updatedFilenames`)
+    3. For files you want to upload, do `git add <filename1> <filename2> <etc>`
+    4. Run `git status` to ensure the files were added to the "commit" (green means they were added!)
+    5. "push" the "commits" to the "branch" of the "repo" by running `git push origin <branch_name>`
+    6. Success! Now if your code is really good, add it to `main` by going to github.com and making a "Pull Request". The website should tell you how to "merge" the code together! If you do this, usually it's a good idea to delete the branch now that you don't need it.
+    7. Back in the terminal, go back to `main` and update YOUR copy of `main` - it doesn't happen automatiically!
+        7a. Checkout the main branch with `git checkout main` - the branch already exists so notice there is no `-b` (this is short for "Make a new (b)ranch")
+        7b. "Fetch" the new updates to main by doing `git fetch`. You should see a short log showing the new changes!
+        7c. "Pull" these changes into your copy of `main` by doing `git pull origin main`. That's it!
+
+** If it's not in github
+    1. Go on github.com and go to "Make a New Repository"
+    2. It will tell you what to do once you name it and everything!
